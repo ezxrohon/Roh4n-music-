@@ -341,7 +341,7 @@ docker run -d --env-file .env --name artistmusic artistmusic
 ```
 ╔══════════════════════════════════════════════════════╗
 ║  ✦  KEEP THESE PRIVATE — NEVER SHARE PUBLICLY  ✦    ║
-╠══════════════════════════════════════════════════════╣
+╠══════════════════════════════════════════════╣
 ║  ✗  BOT_TOKEN          ✗  STRING_SESSION             ║
 ║  ✗  MONGO_DB_URI       ✗  API_HASH                   ║
 ║  ✓  Use a separate Telegram account for assistant    ║

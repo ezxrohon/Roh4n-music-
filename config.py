@@ -1,8 +1,8 @@
 # ==========================================================
-# Copyright (c) 2026 ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴜsɪᴄ˼ ♪ | ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ
+# Copyright (c) 2026 ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴄ˼ ♪ | ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ
 # All Rights Reserved.
 #
-# Project      : ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴜsɪᴄ˼ ♪ - Telegram Music Bot
+# Project      : ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴄ˼ ♪ - Telegram Music Bot
 # Powered By   : ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ
 #
 # Distributed under the MIT License (see LICENSE).
@@ -27,7 +27,7 @@ class Config:
         self.MONGO_URL: str = getenv("MONGO_DB_URI", "mongodb+srv://Elevenyts:Elevenyts@cluster0.vuyc1u2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
         # Branding
-        self.BOT_NAME: str = getenv("BOT_NAME", "⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴜsɪᴄ˼ ♪")
+        self.BOT_NAME: str = getenv("BOT_NAME", "⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴄ˼ ♪")
         self.COPYRIGHT: str = getenv("COPYRIGHT_TEXT", "ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ")
 
         # Limits

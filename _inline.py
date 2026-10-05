@@ -1,12 +1,3 @@
-# ==========================================================
-# Copyright (c) 2026 ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴜsɪᴄ˼ ♪ | ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ
-# All Rights Reserved.
-#
-# Project      : ⎯𝐑𝐨𝐱𝐲  ꭙ ᴍᴜsɪᴄ˼ ♪ - Telegram Music Bot
-# Powered By   : ꞋꞋꞌꞋ𝚨ᴘє𝙭 ɴᴇᴛᴡᴏʀᴋ
-#
-# Distributed under the MIT License (see LICENSE).
-# ==========================================================
 from pyrogram import types
 from pyrogram.enums import ButtonStyle
 
@@ -66,7 +57,7 @@ class Inline:
             keyboard.append(
                 [
                     self.ikb(
-                        text="• ᴄʟᴏꜛᴇ •",
+                        text="• ᴄʟᴏsᴇ •",
                         callback_data=f"controls close {chat_id}",
                         style=ButtonStyle.DANGER,
                     ),
@@ -89,7 +80,7 @@ class Inline:
         else:
             rows = [
                 [
-                    self.ikb(text="ᴀᴅᴍɪɴꜛ",     callback_data="help_admins",       style=ButtonStyle.PRIMARY),
+                    self.ikb(text="ᴀᴅᴍɪɴꜱ",     callback_data="help_admins",       style=ButtonStyle.PRIMARY),
                     self.ikb(text="ᴀᴄᴜʜ",        callback_data="help_auth",         style=ButtonStyle.PRIMARY),
                     self.ikb(text="ʙʀᴏᴀᴅᴄᴀꜛ",  callback_data="help_broadcast",    style=ButtonStyle.PRIMARY),
                 ],
@@ -150,7 +141,6 @@ class Inline:
         )])
         return self.ikm(rows)
 
-    # FIX #1: 'text' param ab actually use ho raha hai (status row me)
     def ping_markup(self, text: str) -> types.InlineKeyboardMarkup:
         return self.ikm([
             [
@@ -173,8 +163,6 @@ class Inline:
             ],
         ])
 
-    # FIX #2: 'item_id' ab callback_data me pass ho raha hai taaki
-    # multi-track queue me sahi item control ho (galat item na dabe)
     def play_queued(
         self, chat_id: int, item_id: str, _text: str
     ) -> types.InlineKeyboardMarkup:
@@ -200,7 +188,6 @@ class Inline:
             )]]
         )
 
-    # FIX #3: 'language' ab ek row me display ho raha hai
     def settings_markup(
         self, lang: dict, admin_only: bool, force_admin: bool, language: str, chat_id: int
     ) -> types.InlineKeyboardMarkup:
@@ -252,3 +239,4 @@ class Inline:
                 self.ikb(text="ᴏᴘᴇɴ ɪɴ ʏᴛ", url=link,       style=ButtonStyle.DANGER),
             ],
         ])
+
